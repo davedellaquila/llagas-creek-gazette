@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Llagas Creek Gazette — 18231 Llagas Creek Dr, Morgan Hill</title>
+<meta name="description" content="The running record of the house sale at 18231 Llagas Creek Dr, Morgan Hill: the work, the money, and what's next — from listing agent Kay Korbel's reports to the sellers.">
+<style>
+  :root{
+    --paper:#faf6ec; --ink:#211c14; --ink-soft:#4a4234; --rule:#211c14;
+    --accent:#7a4b21; --box:#f3ecd9; --box-line:#c9b992; --link:#7a4b21;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --paper:#171410; --ink:#ece4d2; --ink-soft:#b8ac93; --rule:#ece4d2;
+      --accent:#d9a45f; --box:#201b14; --box-line:#4d4230; --link:#d9a45f;
+    }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--paper); color:var(--ink);
+    font-family:Georgia,'Iowan Old Style','Times New Roman',serif;
+    line-height:1.55; font-size:17px;
+  }
+  .page{max-width:1060px; margin:0 auto; padding:20px 18px 48px}
+  a{color:var(--link)}
+  /* Masthead */
+  .dateline{
+    display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap;
+    font-size:.78rem; letter-spacing:.08em; text-transform:uppercase;
+    border-bottom:1px solid var(--rule); padding-bottom:6px; color:var(--ink-soft);
+  }
+  h1.masthead{
+    text-align:center; font-size:clamp(2.3rem,7.5vw,4.4rem); line-height:1.02;
+    margin:.18em 0 .05em; font-weight:900; letter-spacing:-.01em;
+  }
+  .tagline{text-align:center; font-style:italic; color:var(--ink-soft); margin:0 0 10px; font-size:1.02rem}
+  .mast-rule{border-top:4px solid var(--rule); border-bottom:1px solid var(--rule); height:5px; margin-bottom:18px}
+  /* Status strip */
+  .status-strip{
+    display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:10px; margin-bottom:22px;
+  }
+  .status-cell{
+    border:1px solid var(--box-line); background:var(--box); padding:10px 12px;
+  }
+  .status-cell .k{font-size:.72rem; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-soft); margin:0 0 3px}
+  .status-cell .v{font-size:1.02rem; font-weight:bold; margin:0}
+  .status-cell .s{font-size:.86rem; color:var(--ink-soft); margin:2px 0 0}
+  /* Headlines & columns */
+  h2.headline{font-size:clamp(1.7rem,4.6vw,2.6rem); line-height:1.12; margin:.2em 0 .15em; font-weight:900}
+  h3.section{
+    font-size:1.25rem; margin:1.4em 0 .5em; padding-top:.55em;
+    border-top:2px solid var(--rule); letter-spacing:.01em;
+  }
+  h3.section .no{color:var(--accent)}
+  .byline{font-size:.85rem; letter-spacing:.06em; text-transform:uppercase; color:var(--ink-soft); margin:0 0 12px}
+  .cols{column-count:2; column-gap:34px; column-rule:1px solid var(--box-line)}
+  @media (max-width:760px){ .cols{column-count:1} }
+  .cols p{margin:0 0 .9em; break-inside:avoid}
+  p.dropcap::first-letter{
+    font-size:3.1em; float:left; line-height:.82; padding:4px 8px 0 0; font-weight:900;
+  }
+  /* Boxes & lists */
+  .standings{border:1.5px solid var(--rule); padding:14px 18px 6px; margin:0 0 8px; background:var(--box)}
+  .standings h3{margin:.1em 0 .5em; font-size:1.15rem}
+  .standings ul{margin:0 0 .7em; padding-left:1.15em}
+  .standings li{margin-bottom:.45em}
+  ol.open-items{padding-left:1.3em}
+  ol.open-items li{margin-bottom:.55em}
+  .flag{
+    border-left:4px solid var(--accent); background:var(--box);
+    padding:10px 14px; margin:0 0 12px;
+  }
+  .flag p{margin:0}
+  /* Tables */
+  table{width:100%; border-collapse:collapse; margin:0 0 18px; font-size:.95rem}
+  caption{text-align:left; font-weight:bold; font-size:1.05rem; padding:4px 0 8px}
+  th,td{border-bottom:1px solid var(--box-line); padding:6px 8px; text-align:left; vertical-align:top}
+  th{font-size:.75rem; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-soft)}
+  td.amt,th.amt{text-align:right; white-space:nowrap; font-variant-numeric:tabular-nums}
+  tr.total td{font-weight:bold; border-top:2px solid var(--rule)}
+  /* Timeline */
+  .timeline{list-style:none; margin:0; padding:0}
+  .timeline li{padding:7px 0 7px 0; border-bottom:1px solid var(--box-line); display:flex; gap:14px}
+  .timeline .when{flex:0 0 92px; font-weight:bold; font-size:.9rem; color:var(--accent)}
+  .timeline .what{flex:1}
+  @media (max-width:560px){ .timeline li{flex-direction:column; gap:0} .timeline .when{flex:none} }
+  /* Footer */
+  footer{border-top:4px solid var(--rule); margin-top:30px; padding-top:12px; font-size:.88rem; color:var(--ink-soft)}
+  footer p{margin:0 0 .5em}
+  /* Photo lightbox — inherited standard for every newspaper page */
+  .lightbox{
+    position:fixed; inset:0; z-index:999; display:none;
+    background:rgba(8,6,4,.94); align-items:center; justify-content:center; flex-direction:column;
+  }
+  .lightbox.open{display:flex}
+  .lightbox img{max-width:96vw; max-height:82vh; object-fit:contain; box-shadow:0 6px 40px rgba(0,0,0,.6)}
+  .lightbox .lb-bar{
+    display:flex; align-items:center; gap:18px; color:#f3ecd9; margin-top:14px;
+    font-family:Georgia,serif; font-size:1rem;
+  }
+  .lightbox button{
+    background:none; border:1px solid #f3ecd9; color:#f3ecd9; border-radius:50%;
+    width:44px; height:44px; font-size:1.2rem; cursor:pointer; line-height:1;
+  }
+  .lightbox .lb-close{position:absolute; top:14px; right:16px}
+  img.story-photo{cursor:zoom-in; max-width:100%; height:auto}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="dateline">
+    <span>Vol. I — No. 1</span>
+    <span>Morgan Hill, California</span>
+    <span>Tuesday, November 3, 2026</span>
+  </div>
+  <h1 class="masthead">The Llagas Creek Gazette</h1>
+  <p class="tagline">All the news from 18231 Llagas Creek Dr — the work, the money, and what happens next.</p>
+  <div class="mast-rule"></div>
+
+  <div class="status-strip">
+    <div class="status-cell">
+      <p class="k">The Property</p>
+      <p class="v">18231 Llagas Creek Dr</p>
+      <p class="s">Morgan Hill, CA 95037</p>
+    </div>
+    <div class="status-cell">
+      <p class="k">Stage</p>
+      <p class="v">Pre-listing preparation</p>
+      <p class="s">No list price or date yet — the house is being made ready.</p>
+    </div>
+    <div class="status-cell">
+      <p class="k">The Sellers</p>
+      <p class="v">Dave, Ron &amp; Emile Dell&rsquo;Aquila</p>
+      <p class="s">Co-sellers — every spend takes all three.</p>
+    </div>
+    <div class="status-cell">
+      <p class="k">Listing Agent</p>
+      <p class="v">Kay Korbel</p>
+      <p class="s">Realty Experts — she gathers the vendors, invoices and bids, and reports to the brothers. Most of what&rsquo;s printed here comes from her reports.</p>
+    </div>
+  </div>
+
+  <h2 class="headline">A House Gets Ready: Rodents First, Then Everything Else</h2>
+  <p class="byline">From Kay Korbel&rsquo;s reports to the sellers, late September – November 3, 2026</p>
+  <div class="cols">
+    <p class="dropcap">The Llagas Creek house is being readied for sale, and the work has a strict order to it. Kay&rsquo;s sequence: the house must be cleared of rodents first — fumigation can&rsquo;t happen until it is — then fumigation, the Section One pest repairs, the plumbing repairs, exterior paint, interior paint, cleaning, staging, and at last photography. No asking price or list date has been set; this paper exists to keep the record straight while the house gets there.</p>
+    <p>The biggest job so far is done and paid: Silicon Valley Rodent Proofers&rsquo; $5,800 proofing of the roof vents, eaves, attic and crawl space was invoiced October 18 and marked paid. But &ldquo;paid&rdquo; isn&rsquo;t &ldquo;finished&rdquo; — the trappers keep checking until the house is clear, and Kay was still chasing that confirmation on October 29. Everything downstream waits on it: the signed $1,020 of extra crawl-space work at Clean Crawl Space is deliberately <em>not</em> scheduled yet, on Kay&rsquo;s instruction, until the rodent crew clears the sub area and seals the entry points. Scheduling is expected in early December.</p>
+    <p>Money is moving in smaller pieces, too. Clean Crawl Space&rsquo;s two October invoices — $1,125 for the sump pumps and $1,800 for pulling down the vapor barrier — were paid by Ron. Kay fronted $3,064.18 of early costs out of her own pocket. And her October expense plan projects $83,324.18 of third-party work all-in before the house is sold — paint, pest repairs, cleaning, staging and photography included.</p>
+    <p>Two bills need the brothers&rsquo; attention now. Nelson&rsquo;s Pool shows $3,881 due for the new spa heater and monthly service — but Kay&rsquo;s own instruction, from October 22, is to pay the heater only <em>after</em> Mike Nelson tests the system once the security spa cover is installed, expected mid-November. And the city water bill — $652.13, due November 10 — is <strong>not</strong> on autopay, whatever anyone remembers. It has to be paid by hand. Details in the boxes below.</p>
+  </div>
+
+  <h3 class="section"><span class="no">§</span> Where Things Stand</h3>
+  <div class="standings">
+    <h3>The workstreams, one line each</h3>
+    <ul>
+      <li><strong>Rodent proofing (Silicon Valley Rodent Proofers).</strong> Main $5,800 job invoiced and paid Oct 18; trap checks continue until the house is clear — Kay chasing the all-clear. A further $375 invoice (#1774) for extra attic cleanup arrived Nov 3.</li>
+      <li><strong>Crawl space (Clean Crawl Space).</strong> Sump pumps ($1,125) and vapor-barrier pull-down ($1,800) done and paid by Ron. Extra work — 18 liner holes ($720) + an alarm wire ($300), $1,020 total — is signed by Ron and Emile but held: do not schedule until the rodent crew finishes. Early December, most likely. A separate $3,600 quote to reseal the liner awaits the brothers&rsquo; decision.</li>
+      <li><strong>Plumbing (Top Shelf Plumbing).</strong> Estimate #94 for the inspection repair list was negotiated down from $5,617 to <strong>$4,493</strong>. Awaiting the brothers&rsquo; approval; Kay is hunting a cheaper competing bid. The work waits until after fumigation and exterior paint anyway.</li>
+      <li><strong>Fumigation (Best Care Fumigation).</strong> Paperwork in motion since Oct 28–29. No date set yet — and it can&rsquo;t happen until the house is rodent-free.</li>
+      <li><strong>Pool &amp; spa (Nelson&rsquo;s Pool Service).</strong> New Raypak spa heater installed; $3,881 balance presented Nov 1 — but see Kay&rsquo;s pay-after-test condition in the flags below.</li>
+      <li><strong>Paint (Platinum Quality Painting).</strong> Exterior $13,000 + $500 for gutters; interior $14,300. Ten percent deposits needed to schedule; exterior follows the pest work and fumigation.</li>
+      <li><strong>Staging (Mayra Vera).</strong> $4,250 design/styling fee using the sellers&rsquo; own furniture. Undecided — and it gates what house contents can be sold, since staging borrows the furniture.</li>
+    </ul>
+  </div>
+
+  <h3 class="section"><span class="no">§</span> Waiting On — the Open Items</h3>
+  <ol class="open-items">
+    <li><strong>Nelson&rsquo;s Pool, $3,881</strong> (Invoice #4986) — presented as due, but Kay&rsquo;s Oct 22 condition says the $3,741 heater is payable only after a successful test once the spa cover is on (~mid-November). The $140 monthly service is undisputed. No payment recorded yet.</li>
+    <li><strong>SVRP Invoice #1774, $375</strong> — additional attic cleanup, forwarded to the brothers Nov 3; $0 paid so far.</li>
+    <li><strong>The rodent all-clear</strong> — Kay asked Julio for an update Oct 29; nothing back yet. Crawl-space scheduling and fumigation both wait on it.</li>
+    <li><strong>Liner decision</strong> — reseal the crawl-space liner for $3,600, or price a full replacement (unquoted, &ldquo;much more&rdquo;)? The brothers&rsquo; call.</li>
+    <li><strong>Top Shelf Estimate #94, $4,493</strong> — approval outstanding; competing bids being sought (a retired general contractor; Superior Plumbing was asked Oct 19 and hasn&rsquo;t surfaced).</li>
+    <li><strong>Fumigation date</strong> — Best Care&rsquo;s forms are in; no date in hand.</li>
+    <li><strong>Paint deposits</strong> — 10% down ($1,300 exterior) via DocuSign to get Platinum scheduled; no signature confirmed yet.</li>
+    <li><strong>Water bill, $652.13, due November 10</strong> — City of Morgan Hill Bill #421657. <strong>Not on autopay</strong> (it was declined in July and deleted) — someone has to pay it by hand. The same bill shows 114 HCF of September water use at a vacant house, the joint-highest in 13 months; leak or irrigation, still unexplained.</li>
+    <li><strong>Staging, $4,250</strong> — Mayra Vera&rsquo;s proposal still undecided.</li>
+    <li><strong>Section One pest repairs</strong> — $19,460 plus $4,245 of additional damage on Kay&rsquo;s plan, sequenced before painting; no approval or scheduling yet.</li>
+    <li><strong>Spa security cover</strong> — the Nelson heater test waits on it; purchase/install status unconfirmed.</li>
+    <li><strong>Kay&rsquo;s reimbursement</strong> — $3,064.18 she fronted as of Oct 6; reimbursement status not recorded.</li>
+    <li><strong>House contents</strong> — the selling plan waits on the brothers and the staging decision. One exception: the vintage steel tanker desk in the garage is listed and must be gone this week.</li>
+  </ol>
+
+  <div class="flag">
+    <p><strong>Editor&rsquo;s flag — read the Nelson&rsquo;s bill with Kay&rsquo;s condition attached.</strong> Nelson&rsquo;s November statement presents the full $3,881 as the balance due, due by the 26th. Kay&rsquo;s October 22 instruction stands alongside it: the heater gets paid after it passes its test. Both facts are true; the Gazette prints them together so nobody pays the wrong one first.</p>
+  </div>
+  <div class="flag">
+    <p><strong>Editor&rsquo;s flag — the water mystery.</strong> 114 hundred-cubic-feet of water ran through a vacant house in September. Until somebody explains it, treat every future water bill as worth a second look.</p>
+  </div>
+
+  <h3 class="section"><span class="no">§</span> The Money</h3>
+  <table>
+    <caption>Paid</caption>
+    <tr><th>Item</th><th class="amt">Amount</th></tr>
+    <tr><td>Silicon Valley Rodent Proofers — main proofing job (Invoice #1761)</td><td class="amt">$5,800.00</td></tr>
+    <tr><td>Clean Crawl Space — sump-pump servicing (#14637), paid by Ron</td><td class="amt">$1,125.00</td></tr>
+    <tr><td>Clean Crawl Space — vapor-barrier pull-down (#14644), paid by Ron</td><td class="amt">$1,800.00</td></tr>
+    <tr><td>MG Constructors — structural engineer (in Kay&rsquo;s out-of-pocket below)</td><td class="amt">$1,350.00</td></tr>
+    <tr><td>HomeGuard inspections bundle (pest / home / roof / sewer / spa)</td><td class="amt">$1,345.00</td></tr>
+    <tr><td>Sergio Gardening — hauling and extra work (Sep–Oct)</td><td class="amt">$2,450.00</td></tr>
+    <tr><td>Nelson&rsquo;s Pool — spa repair (Invoice #4645)</td><td class="amt">$583.00</td></tr>
+    <tr><td>Kay&rsquo;s out-of-pocket as of Oct 6 — alarms, fixtures, fireplace inspections, Duke&rsquo;s, inspections (includes the MG $1,350 above)</td><td class="amt">$3,064.18</td></tr>
+  </table>
+  <table>
+    <caption>Due / presented for payment</caption>
+    <tr><th>Item</th><th class="amt">Amount</th></tr>
+    <tr><td>Nelson&rsquo;s Pool — Invoice #4986 (spa heater $3,741 + $140 monthly service) — heater payable after its test, per Kay</td><td class="amt">$3,881.00</td></tr>
+    <tr><td>SVRP — Invoice #1774, additional attic cleanup</td><td class="amt">$375.00</td></tr>
+    <tr><td>City of Morgan Hill water/sewer — Bill #421657, due Nov 10, pay manually</td><td class="amt">$652.13</td></tr>
+  </table>
+  <table>
+    <caption>Agreed, quoted, or planned — not yet paid</caption>
+    <tr><th>Item</th><th class="amt">Amount</th></tr>
+    <tr><td>Clean Crawl Space — signed sub-area work (liner holes + alarm wire), held for early December</td><td class="amt">$1,020.00</td></tr>
+    <tr><td>Clean Crawl Space — reseal liner (quote, undecided)</td><td class="amt">$3,600.00</td></tr>
+    <tr><td>Top Shelf Plumbing — Estimate #94, revised (approval outstanding)</td><td class="amt">$4,493.00</td></tr>
+    <tr><td>Platinum Painting — exterior + gutter cleaning</td><td class="amt">$13,500.00</td></tr>
+    <tr><td>Platinum Painting — interior</td><td class="amt">$14,300.00</td></tr>
+    <tr><td>Section One pest repairs + additional damage</td><td class="amt">$23,705.00</td></tr>
+    <tr><td>House cleaning after painting (Martina Torres)</td><td class="amt">$3,000.00</td></tr>
+    <tr><td>Staging (Mayra Vera)</td><td class="amt">$4,250.00</td></tr>
+    <tr><td>Photography</td><td class="amt">$950.00</td></tr>
+    <tr><td>Garage concrete repair</td><td class="amt">$340.00</td></tr>
+    <tr class="total"><td>Kay&rsquo;s projected third-party total (her Oct 11 expense plan)</td><td class="amt">$83,324.18</td></tr>
+  </table>
+
+  <h3 class="section"><span class="no">§</span> The Record So Far</h3>
+  <ul class="timeline">
+    <li><span class="when">Sep 25</span><span class="what">MG Constructors structural engineer&rsquo;s report paid — $1,350.</span></li>
+    <li><span class="when">Sep 29</span><span class="what">Kay sends the brothers Nelson&rsquo;s spa invoice, the pest inspection report, and Mayra Vera&rsquo;s $4,250 staging proposal.</span></li>
+    <li><span class="when">Sep 30</span><span class="what">Structural engineer Sonny Vakul (MG Constructors) walks the house and the inspection reports.</span></li>
+    <li><span class="when">Oct 2</span><span class="what">Duke&rsquo;s Heating &amp; Air invoice arrives: $575 total, $75 balance; Kay asks who should pay it. (Her own expense sheet later lists the $75 as paid by her.)</span></li>
+    <li><span class="when">Oct 4</span><span class="what">A DocuSign envelope for Emile&rsquo;s sale signature bounces — flagged as a blocker then; he later signs the crawl-space agreement fine on Oct 31, so the sale envelope&rsquo;s status is simply unconfirmed.</span></li>
+    <li><span class="when">Oct 7</span><span class="what">SVRP Estimate #787: $5,800 to screen, seal, clean and trap the house clear of rodents, with a one-year warranty.</span></li>
+    <li><span class="when">Oct 8</span><span class="what">Revised paint bids circulate: Platinum exterior $13,000 + $500 gutters; interior $14,300; 10% deposits to schedule.</span></li>
+    <li><span class="when">Oct 11</span><span class="what">Kay&rsquo;s expenses package lands: projected third-party total $83,324.18, her $3,064.18 out-of-pocket, and the paid receipts.</span></li>
+    <li><span class="when">Oct 14</span><span class="what">Clean Crawl Space inspects the sub area — the visit that produces the $1,020 work agreement.</span></li>
+    <li><span class="when">Oct 16</span><span class="what">Clean Crawl Space invoices #14637 ($1,125) and #14644 ($1,800) forwarded to the brothers.</span></li>
+    <li><span class="when">Oct 18</span><span class="what">SVRP Invoice #1761 for the $5,800 main job — marked <strong>paid</strong>.</span></li>
+    <li><span class="when">Oct 19</span><span class="what">Vendor confirms Ron paid both Clean Crawl invoices. Kay asks Superior Plumbing for a competing bid (still outstanding).</span></li>
+    <li><span class="when">Oct 22</span><span class="what">Kay forwards the $3,741 Raypak spa-heater invoice with her condition: pay after Mike tests the system post-cover, ~mid-November.</span></li>
+    <li><span class="when">Oct 23</span><span class="what">The three brothers confer by phone — sign-offs, the water question, house contents. (Decisions from the call aren&rsquo;t in the email record.)</span></li>
+    <li><span class="when">Oct 27</span><span class="what">Kay sends Top Shelf the inspection repair list; Estimate #94 comes back that night at $5,617. Ron reports fixing the garage spray wand himself — calcification — though hose and sprayer still go on the list.</span></li>
+    <li><span class="when">Oct 28</span><span class="what">Kay pushes back on Top Shelf&rsquo;s price; Ray offers 20% off. Best Care Fumigation sends its prep forms. Clean Crawl quotes $3,600 to reseal the liner.</span></li>
+    <li><span class="when">Oct 29</span><span class="what">Revised Top Shelf estimate: <strong>$4,493</strong>. Kay tells the brothers the plumbing can wait until after fumigation and paint, and that she&rsquo;ll chase the rodent all-clear — &ldquo;critical that the house be free of rodent prior to fumigation.&rdquo;</span></li>
+    <li><span class="when">Oct 30–31</span><span class="what">Ron (Oct 30) and Emile (Oct 31) DocuSign the Clean Crawl Space work agreement.</span></li>
+    <li><span class="when">Nov 1</span><span class="what">Nelson&rsquo;s Invoice #4986: balance due $3,881 (heater + monthly service), payment asked by the 26th.</span></li>
+    <li><span class="when">Nov 2</span><span class="what">Kay sends Clean Crawl Space the signed $1,020 work order with a bold instruction: <strong>do not schedule yet</strong> — early December, after the rodent crew clears and seals.</span></li>
+    <li><span class="when">Nov 3</span><span class="what">Kay forwards SVRP Invoice #1774: $375 for additional attic cleanup. And this Gazette publishes its first edition.</span></li>
+  </ul>
+
+  <footer>
+    <p><strong>About this paper.</strong> The Llagas Creek Gazette is the running record of the sale of 18231 Llagas Creek Dr, Morgan Hill — compiled from listing agent Kay Korbel&rsquo;s reports and invoices to the sellers, Dave, Ron and Emile Dell&rsquo;Aquila. It is updated as new reports come in. Kay also works by text, and the brothers decide some things by phone, so the paper prints what the written record shows and says so when the record runs out.</p>
+    <p>First edition — Tuesday, November 3, 2026. Compiled November 3, 2026, from reports through that morning.</p>
+  </footer>
+</div>
+
+<!-- Photo lightbox — inherited standard: tap any story photo for the full-screen view -->
+<div class="lightbox" id="lightbox" role="dialog" aria-label="Photo viewer">
+  <button class="lb-close" id="lbClose" aria-label="Close">&times;</button>
+  <img id="lbImg" alt="">
+  <div class="lb-bar">
+    <button id="lbPrev" aria-label="Previous photo">&#8249;</button>
+    <span id="lbCount"></span>
+    <button id="lbNext" aria-label="Next photo">&#8250;</button>
+  </div>
+</div>
+<script>
+(function(){
+  var photos = Array.prototype.slice.call(document.querySelectorAll('img.story-photo'));
+  if(!photos.length) return;
+  var lb = document.getElementById('lightbox'),
+      img = document.getElementById('lbImg'),
+      count = document.getElementById('lbCount'),
+      idx = 0, group = [];
+  function siblings(el){
+    var art = el.closest('article') || document;
+    return Array.prototype.slice.call(art.querySelectorAll('img.story-photo'));
+  }
+  function show(i){
+    idx = (i + group.length) % group.length;
+    img.src = group[idx].src;
+    img.alt = group[idx].alt || '';
+    count.textContent = (idx + 1) + ' / ' + group.length;
+    document.getElementById('lbPrev').style.visibility = group.length > 1 ? 'visible' : 'hidden';
+    document.getElementById('lbNext').style.visibility = group.length > 1 ? 'visible' : 'hidden';
+  }
+  function open(el){ group = siblings(el); lb.classList.add('open'); show(group.indexOf(el)); }
+  function close(){ lb.classList.remove('open'); img.src = ''; }
+  photos.forEach(function(p){ p.addEventListener('click', function(){ open(p); }); });
+  document.getElementById('lbClose').addEventListener('click', close);
+  document.getElementById('lbPrev').addEventListener('click', function(){ show(idx - 1); });
+  document.getElementById('lbNext').addEventListener('click', function(){ show(idx + 1); });
+  lb.addEventListener('click', function(e){ if(e.target === lb) close(); });
+  document.addEventListener('keydown', function(e){
+    if(!lb.classList.contains('open')) return;
+    if(e.key === 'Escape') close();
+    if(e.key === 'ArrowLeft') show(idx - 1);
+    if(e.key === 'ArrowRight') show(idx + 1);
+  });
+  var tx = null;
+  lb.addEventListener('touchstart', function(e){ tx = e.changedTouches[0].clientX; }, {passive:true});
+  lb.addEventListener('touchend', function(e){
+    if(tx === null) return;
+    var dx = e.changedTouches[0].clientX - tx;
+    if(Math.abs(dx) > 40) show(idx + (dx < 0 ? 1 : -1));
+    tx = null;
+  }, {passive:true});
+})();
+</script>
+</body>
+</html>
